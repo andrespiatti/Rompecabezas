@@ -1,0 +1,134 @@
+/*Código armado por La Foca Loca S.A. No modificar*/
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  width: 940px;
+  margin: 5% auto;
+  min-height: 100%;
+  background-image: url(../images/adventure.jpg);
+}
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+li {
+  padding: 5px 0;
+  animation: fadein 5s;
+}
+li::before {
+  content: "• ";
+  color: #EC6778;
+}
+
+.col-40 h1 {
+  font-size: 20px;
+  color: #E84A5F;
+}
+
+.col-40, .col-60 {
+  display: table-cell;
+  margin: 0;
+  vertical-align: top;
+}
+.col-40 {
+  background: #FFF;
+  padding: 30px;
+  color: #000;
+}
+
+.col-60 {
+  background: #E84A5F;
+}
+
+#flecha{
+  font-size: 60px;
+}
+
+.texto-centrado {
+  text-align: center;
+}
+
+#titulo-juego{
+  font-size: 30px;
+  color: white;
+  background-color: red;
+  letter-spacing: 14px;
+}
+
+
+.titulo-instrucciones{
+  font-size: 18px;
+  color: red;
+}
+
+#lista-instrucciones{
+  list-style: none;
+  font-size: 16px;
+}
+li::before {
+  content: "•";
+  color: red;
+}
+
+.texto-objetivo{
+  font-size: 18px;
+  color: red;
+}
+
+.titulo-ultimo-movimiento{
+  font-size: 18px;
+  color: red;
+}
+
+#footer{
+  width: 100%;
+  text-align: center;
+}
+
+.titulo-footer{
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+ #juego{
+   display: flex;
+   background-color: red;
+   width: 620px;
+   height: 620px;
+   flex-wrap: wrap;
+
+ }
+
+#juego div {
+  text-align: center;
+  animation: fadein 2s;
+}
+
+.bloques{
+  width: 33.33%;
+  height: 33.33%;
+}
+
+.bloquecito{
+  border: 1%;
+  width: 99%;
+  height: 99%;
+}
+
+
+.resolucion{
+  width: 40%;
+  height: 40%;
+  text-align: center;
+  margin-left: 30%;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
